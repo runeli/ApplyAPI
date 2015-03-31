@@ -1,0 +1,17 @@
+{
+  "name": "ApplyAPI",
+  "version": "1.0.0",
+  "description": "A quick an easy way to create a server that can be used to store applications for employment or other events.",
+  "main": "app.js",
+  "scripts": {
+    "test": "mocha --reporter=\"spec\""
+  },
+  "author": "Aleksanteri Negru-Vode <aleksanteri.negru-vode@raute.com>",
+  "license": "MIT",
+  "dependencies": {
+    "express": "^4.12.1",
+    "body-parser": "^1.12.0",
+    "express-handlebars": "^1.2.2",
+    "request": "^2.53.0"
+  }
+}
