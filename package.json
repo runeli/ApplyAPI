@@ -4,7 +4,8 @@
   "description": "A quick an easy way to create a server that can be used to store applications for employment or other events.",
   "main": "app.js",
   "scripts": {
-    "test": "mocha --reporter=\"spec\""
+    "test": "mocha --reporter=\"spec\"",
+    "start":  "node app.js"
   },
   "author": "Aleksanteri Negru-Vode <aleksanteri.negru-vode@raute.com>",
   "license": "MIT",
