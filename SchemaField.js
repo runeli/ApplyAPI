@@ -1,4 +1,5 @@
-﻿function SchemaField(schemaField) {
+﻿//Represents a schema field that can be validated for an array.
+function SchemaField(schemaField) {
     this.type = schemaField.type;
     this.typeString = schemaField.type; //Container for other than primitive types
     this.label = schemaField.label.toLowerCase();
