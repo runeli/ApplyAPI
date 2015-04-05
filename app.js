@@ -12,8 +12,9 @@ var express = require("express"),
 
 app.use(bodyParser.json());
 app.set('views', './views');
-app.engine('handlebars', hbs({defaultLayout:'main'}));
+app.engine('handlebars', hbs());
 app.set('view engine', 'handlebars');
+
 
 app.use('/css', express.static(__dirname + '/css'));
 app.use('/js', express.static(__dirname + '/js'));
