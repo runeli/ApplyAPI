@@ -7,12 +7,12 @@ A quick an easy way to create a server that can be used to store applications fo
 [Click here for the demo](http://demo/)
 
 ## Quickstart
-
+```
     git clone https://github.com/runeli/ApplyAPI.git ApplyAPI
     cd ApplyAPI
     npm install
     npm start
-
+```
 See web UI at:[http://localhost:3000/api](http://localhost:3000/api)  
 Send a HTTP POST request with Content-type type of`application/json` to`/api/apply/`
 
@@ -71,5 +71,58 @@ What content type to accept when receiving HTTP requests._default_:`application/
 #### fields
 
 A schema of the application. The schema consists of an array of objects. Each object is formatted as follows:
-
+```javascript
+{
+  type: String,               //Type of the answer the API expects from the user.
+  label: 'name',              //Name the field of the JSON application object. 
+  desc: 'What is your name?', //Additional information regarding this field.
+  required: true              //If user does not submit a required field, the application will be rejected.
+}
+```
 _default_:
+```javascript
+[
+        {
+            type: String,
+            label: 'name',
+            desc: 'What is your name?',
+            required: true
+        },
+        {
+            type: String,
+            label: 'lastname',
+            desc: 'What is your last name?',
+            required: true
+        },
+        {
+            type: String,
+            label: 'email',
+            desc: 'What is your email?',
+            required: true
+        },
+        {
+            type: String,
+            label: 'location',
+            desc: 'Where are you located?',
+            required: false
+        },
+        {
+            type: Number,
+            label: 'age',
+            desc: 'How old are you?',
+            required: false
+        },
+        {
+            type: [String],
+            label: 'github',
+            desc: 'List of your projects URLs',
+            required: false
+        },
+        {
+            type: Boolean,
+            label: 'remote',
+            desc: 'Do you need to work remotely?',
+            required: false
+        }
+    ]
+```
