@@ -9,7 +9,7 @@ module.exports = {
     pageTitle: 'ApplyAPI',
 
     //A link to your orgnanization's homepage / recruitment page or where-ever you provide more information.
-    organizationURL: 'http://raute.com/',
+    organizationURL: 'http://runeli.github.io/CV/',
 
     //An URL to a background image rendered in the web UI.
     backgroundURL: 'http://lorempixel.com/1024/760/nature/3/',
