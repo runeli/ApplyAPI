@@ -1,3 +1,4 @@
+console.log('Starting up');
 var express = require("express"),
     app = express(),
     fs = require('fs'),
