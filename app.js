@@ -36,7 +36,7 @@ app[config.method].call(app, config.base, function (req, res) {
     }
     var application = new Application(req.body, config.fields);
     if (application.isValid()) {
-        var writer = new ApplicationWriter(application, config.uploadDir);
+        var writer = new ApplicationWriter(application);
         res.writeHead(200, {'Content-type': 'text/plain'});
         res.end(writer.write());
     } else {

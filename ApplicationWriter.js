@@ -1,10 +1,10 @@
 ﻿var fs = require('fs'),
-    writerConfig = require('./writerConfig.js');
+    writerConfig = require('./config.js').writer;
 
 //Class used to handle writing of the application.
-function ApplicationWriter(application, dest) {
+function ApplicationWriter(application) {
     this.writerConfig = writerConfig;
-    this.writerConfig.dest = dest;
+    this.dest = require('./config.js').uploadDir;
     this.application = application;
 }
 
@@ -37,7 +37,7 @@ proto._generatePath = function (n) {
 
     //add date to the filename and form the attempted filename
     var fileName = prefix + this.writerConfig.locale.fin() + '.' + this.writerConfig.fileType;
-    var pathToWrite = __dirname + this.writerConfig.dest + '/' + fileName;
+    var pathToWrite = __dirname + this.dest + '/' + fileName;
 
     
     //Create unique name for the file if it already exists in the system
