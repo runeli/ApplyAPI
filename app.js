@@ -55,7 +55,7 @@ app.get('/api/', function (req, res) {
 });
 
 
-app.listen(3000, function () {
-    console.log("Working on port 3000");
+app.listen(config.port, function () {
+    console.log("Working on port: " + config.port);
 });
 

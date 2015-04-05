@@ -2,6 +2,9 @@ module.exports = {
     //The path to use for the ApplyAPI. If the user points the request to yourhost:3000/api/apply the request will be evaluated accordingly.
     base: '/api/apply',
 
+    //Port
+    port: 80,
+
     //Title of the page. Displayed inside the <title> tag and used to create a "logo" for the web interface.
     pageTitle: 'ApplyAPI',
 
