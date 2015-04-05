@@ -86,7 +86,7 @@ module.exports = {
             }
 
         },
-        fileNameFields: ['name', 'surname'], //Which fields should be visible in the application file.
+        fileNameFields: ['name', 'lastname'], //Which fields should be visible in the application file.
         separator: '_', //used to differentiate parts in saved filenames
         saveMessage: 'Your application has been saved.' //The message displayed when the application has been successfully saved.
 
