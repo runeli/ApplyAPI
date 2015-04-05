@@ -55,7 +55,7 @@ app.get('/api/', function (req, res) {
 });
 
 var port = process.env.PORT || config.port;
-app.listen(port, function () {
+app.listen(3000, function () {
     console.log("Working on port: " + port);
 });
 
