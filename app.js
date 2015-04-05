@@ -54,8 +54,8 @@ app.get('/api/', function (req, res) {
     res.render('home', { appCount: webUI.getApplicationNames().length, fields: webUI.getFields(), config: config });
 });
 
-
-app.listen(config.port, function () {
-    console.log("Working on port: " + config.port);
+var port = process.env.PORT || config.port;
+app.listen(port, function () {
+    console.log("Working on port: " + port);
 });
 
