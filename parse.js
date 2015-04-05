@@ -1,4 +1,5 @@
-﻿function parse(obj) {
+﻿//Helper function to parse objects boolean strings 'true' & 'false' and numeric values to their corresponding native types.
+function parse(obj) {
     var result = {},
         key,
         value;
