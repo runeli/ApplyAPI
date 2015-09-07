@@ -2,10 +2,6 @@
 
 A quick an easy way to create a server that can be used to store applications for employment or other events.
 
-## Demo
-
-[Click here for the demo](http://demo/)
-
 ## Quickstart
 ```
     git clone https://github.com/runeli/ApplyAPI.git ApplyAPI
